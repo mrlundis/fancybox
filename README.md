@@ -9,6 +9,30 @@ License: http://www.fancyapps.com/fancybox/#license
 
 Copyright (c) 2012 Janis Skarnelis - janis@fancyapps.com
 
+Npm specific
+------------
+Install
+```
+npm install fancybox --save-dev
+```
+
+Example usage
+```
+// home.html
+<div class="fancybox-me"><h2>Ain't this a fancy box?</h2></div>
+
+// main.js (1)
+var $ = require('jquery');
+require('fancybox')($); <------- (2)
+
+$(document).ready(function() {
+    $.fancybox.open($('.fancybox-me'));
+});
+```
+(1) Make sure your html file is referencing the browserified version of your javascript.  
+(2) This is where fancybox attaches itself to the jquery object.
+
+Please visit [the official site](http://fancyapps.com/fancybox/) for more info.  Their official github repository [can also be found here](https://github.com/fancyapps/fancyBox).
 
 How to use
 ----------
