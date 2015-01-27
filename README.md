@@ -9,8 +9,7 @@ License: http://www.fancyapps.com/fancybox/#license
 
 Copyright (c) 2012 Janis Skarnelis - janis@fancyapps.com
 
-Npm specific
-------------
+##Npm specific
 Install
 ```
 npm install fancybox --save-dev
@@ -33,6 +32,11 @@ $(document).ready(function() {
 (2) This is where fancybox attaches itself to the jquery object.
 
 Please visit [the official site](http://fancyapps.com/fancybox/) for more info.  Their official github repository [can also be found here](https://github.com/fancyapps/fancyBox).
+
+###New structure of asset files (css/img/scss)
+When turning this into an npm module I decided to standardize the structure a bit.  Before fancybox relied on all asset files residing in the same directory.  Now if you were to reference the css directly, it expects the images to be relatively located at the '../img' directory.  For those unfamiliar, this structure makes more sense because css files _should_ be all concatenated and minified while images won't be.  This means typically you'll want your css in a separate folder (I put mine in a styles folder).  However, if this doesn't work with your existing structure then you'll have to change the paths.  Better yet, import the scss files which I added.  I made sure these use the standard sass image-url function so it points to the correct image directory during sass compilation.
+
+#Note: Below is the previous documentation as seen on their official github repository
 
 How to use
 ----------
