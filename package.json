@@ -2,7 +2,7 @@
   "name": "fancybox",
   "version": "2.1.6",
   "description": "fancyBox is a tool that offers a nice and elegant way to add zooming functionality for images, html content and multi-media on your webpages. It is built on the top of the popular JavaScript framework jQuery and is both easy to implement and a snap to customize.",
-  "main": "./dist/js/fancybox.jquery.cjs.js",
+  "main": "./dist/js/jquery.fancybox.cjs.js",
   "scripts": {
     "test": "./node_modules/phantomjs/lib/phantom/bin/phantomjs ./test.js"
   },
